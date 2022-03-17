@@ -179,3 +179,15 @@ myanimelist.net##div.borderDark:nth-of-type(10) > div.spaceit:nth-of-type(1) > .
 
 ! 
 myanimelist.net##.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span
+
+!
+myanimelist.net##.score-1.score-label.completed.manga.text
+myanimelist.net##.score-2.score-label.completed.manga.text
+myanimelist.net##.score-3.score-label.completed.manga.text
+myanimelist.net##.score-4.score-label.completed.manga.text
+myanimelist.net##.score-5.score-label.completed.manga.text
+myanimelist.net##.score-6.score-label.completed.manga.text
+myanimelist.net##.score-7.score-label.completed.manga.text
+myanimelist.net##.score-8.score-label.completed.manga.text
+myanimelist.net##.score-9.score-label.completed.manga.text
+myanimelist.net##.score-10.score-label.completed.manga.text
