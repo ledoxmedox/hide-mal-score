@@ -1,2 +1,2 @@
 # hide-myanimelist-rating
-Hide myanimelist rating filters for uBlock Origin
+Hide myanimelist rating filters for uBlock Origin.
