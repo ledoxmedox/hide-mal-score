@@ -215,3 +215,6 @@ myanimelist.net##.score-4.score-label.reading.manga.text
 myanimelist.net##.score-3.score-label.reading.manga.text
 myanimelist.net##.score-2.score-label.reading.manga.text
 myanimelist.net##.score-1.score-label.reading.manga.text
+
+! https://myanimelist.net/topanime.php
+myanimelist.net##.score
