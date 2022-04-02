@@ -196,8 +196,9 @@ myanimelist.net##div.borderDark:nth-of-type(48) > div.spaceit:nth-of-type(1) > .
 myanimelist.net##div.borderDark:nth-of-type(49) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
 myanimelist.net##div.borderDark:nth-of-type(50) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
 
-! 
+! Random rating studio thing idk prob only for movie not TV
 myanimelist.net##.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span
+myanimelist.net##tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer:nth-of-type(8) > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span
 
 ! Last Manga Updates
 ! https://myanimelist.net/profile/YourProfile
