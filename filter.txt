@@ -258,3 +258,6 @@ myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-4.score-label.on.te
 myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-3.score-label.on.text
 myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-2.score-label.on.text
 myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-1.score-label.on.text
+
+! https://myanimelist.net/stacks/4019?view_style=tile
+myanimelist.net##.stars
