@@ -1,5 +1,5 @@
 ! Hide MAL Rating 
-! Last updated: 24/05/2022
+! Last updated: 28/08/2022
 
 ! https://myanimelist.net/anime/33352/Violet_Evergarden
 myanimelist.net##.score.fl-l > .score-1.score-label
@@ -261,3 +261,17 @@ myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-1.score-label.on.te
 
 ! https://myanimelist.net/stacks/4019?view_style=tile
 myanimelist.net##.stars
+
+! 2022-08-02 https://myanimelist.net
+myanimelist.net##tr.js-anime-watch-status-people-manga-notinmylist.js-people-manga > td.borderClass > div.spaceit_pad > span
+
+! 2022-08-09 https://myanimelist.net
+myanimelist.net##.js-btn-not-recommended.not-recommended.tag
+myanimelist.net##.js-btn-recommended.recommended.tag
+
+! 2022-08-16 https://myanimelist.net
+myanimelist.net##.js-anime-type-6.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span
+
+! 2022-08-25 https://myanimelist.net
+myanimelist.net##.show.mal-modal
+myanimelist.net##.show.mal-modal-backdrop
