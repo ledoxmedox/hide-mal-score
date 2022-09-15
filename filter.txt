@@ -275,3 +275,10 @@ myanimelist.net##.js-anime-type-6.js-anime-type-all.js-seasonal-anime.seasonal-a
 ! 2022-08-25 https://myanimelist.net
 myanimelist.net##.show.mal-modal
 myanimelist.net##.show.mal-modal-backdrop
+
+! 2022-09-04 https://myanimelist.net
+myanimelist.net##.js-btn-mixed-feelings.mixed-feelings.tag
+
+! 2022-09-15 https://myanimelist.net
+myanimelist.net##.js-btn-label.btn-label.recommended.tag
+myanimelist.net##.js-btn-label.btn-label.not-recommended.tag
