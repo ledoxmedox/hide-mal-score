@@ -282,4 +282,5 @@ myanimelist.net##.js-btn-mixed-feelings.mixed-feelings.tag
 ! 2022-09-15 https://myanimelist.net
 myanimelist.net##.js-btn-label.btn-label.recommended.tag
 myanimelist.net##.js-btn-label.btn-label.not-recommended.tag
+
 myanimelist.net##.js-btn-label.btn-label.mixed-feelings.tag
