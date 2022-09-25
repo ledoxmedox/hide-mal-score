@@ -215,6 +215,7 @@ myanimelist.net##.score-7.score-label.completed.manga.text
 myanimelist.net##.score-8.score-label.completed.manga.text
 myanimelist.net##.score-9.score-label.completed.manga.text
 myanimelist.net##.score-10.score-label.completed.manga.text
+
 myanimelist.net##.score-10.score-label.reading.manga.text
 myanimelist.net##.score-9.score-label.reading.manga.text
 myanimelist.net##.score-8.score-label.reading.manga.text
@@ -225,6 +226,7 @@ myanimelist.net##.score-4.score-label.reading.manga.text
 myanimelist.net##.score-3.score-label.reading.manga.text
 myanimelist.net##.score-2.score-label.reading.manga.text
 myanimelist.net##.score-1.score-label.reading.manga.text
+
 myanimelist.net##.score-1.score-label.hold.manga.text
 myanimelist.net##.score-2.score-label.hold.manga.text
 myanimelist.net##.score-3.score-label.hold.manga.text
@@ -235,6 +237,18 @@ myanimelist.net##.score-7.score-label.hold.manga.text
 myanimelist.net##.score-8.score-label.hold.manga.text
 myanimelist.net##.score-9.score-label.hold.manga.text
 myanimelist.net##.score-10.score-label.hold.manga.text
+
+myanimelist.net##.score-1.score-label.on_hold.manga.text
+myanimelist.net##.score-2.score-label.on_hold.manga.text
+myanimelist.net##.score-3.score-label.on_hold.manga.text
+myanimelist.net##.score-4.score-label.on_hold.manga.text
+myanimelist.net##.score-5.score-label.on_hold.manga.text
+myanimelist.net##.score-6.score-label.on_hold.manga.text
+myanimelist.net##.score-7.score-label.on_hold.manga.text
+myanimelist.net##.score-8.score-label.on_hold.manga.text
+myanimelist.net##.score-9.score-label.on_hold.manga.text
+myanimelist.net##.score-10.score-label.on_hold.manga.text
+
 myanimelist.net##.score-1.score-label.dropped.manga.text
 myanimelist.net##.score-2.score-label.dropped.manga.text
 myanimelist.net##.score-3.score-label.dropped.manga.text
@@ -283,3 +297,7 @@ myanimelist.net##.js-btn-mixed-feelings.mixed-feelings.tag
 myanimelist.net##.js-btn-label.btn-label.recommended.tag
 myanimelist.net##.js-btn-label.btn-label.not-recommended.tag
 myanimelist.net##.js-btn-label.btn-label.mixed-feelings.tag
+
+! 2022-08-28 https://myanimelist.net
+myanimelist.net##.show.mal-modal
+myanimelist.net##.show.mal-modal-backdrop
