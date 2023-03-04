@@ -302,3 +302,6 @@ myanimelist.net##span.work-status-num:nth-of-type(2)
 myanimelist.net##.notes > .edit
 myanimelist.net##.on.mr4.icon-people-score-star
 myanimelist.net##.pt8.info
+
+! https://myanimelist.net/stacks/21390?view_style=seasonal
+myanimelist.net##.score.scormem-item
