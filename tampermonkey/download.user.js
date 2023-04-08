@@ -210,7 +210,9 @@ const selectors = [
     '.score-1.score-label.score.scormem-item',
 
     // Anime and Manga Statistics Score (Bottom Left)
-    // https://myanimelist.net/anime/33352/Violet_Evergarden or https://myanimelist.net/manga/98930/Violet_Evergarden
+    // https://myanimelist.net/anime/33352/Violet_Evergarden 
+    // or
+    // https://myanimelist.net/manga/98930/Violet_Evergarden
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-1.score-label',
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-2.score-label',
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-3.score-label',
