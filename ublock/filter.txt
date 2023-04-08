@@ -1,0 +1,307 @@
+! 5 march 2023
+
+! ex https://myanimelist.net/anime/33352/Violet_Evergarden
+myanimelist.net##.score.fl-l > .score-1.score-label
+myanimelist.net##.score.fl-l > .score-2.score-label
+myanimelist.net##.score.fl-l > .score-3.score-label
+myanimelist.net##.score.fl-l > .score-4.score-label
+myanimelist.net##.score.fl-l > .score-5.score-label
+myanimelist.net##.score.fl-l > .score-6.score-label
+myanimelist.net##.score.fl-l > .score-7.score-label
+myanimelist.net##.score.fl-l > .score-8.score-label
+myanimelist.net##.score.fl-l > .score-9.score-label
+myanimelist.net##.score.fl-l > .score-10.score-label
+
+! ex https://myanimelist.net/anime/genre/4/Comedy
+myanimelist.net##td.bgColor0.ac.borderClass:nth-of-type(5)
+myanimelist.net##td.bgColor1.ac.borderClass:nth-of-type(5)
+myanimelist.net##td.fw-b.ac.bgColor1.borderClass:nth-of-type(5)
+
+! forgot maybe for this example https://myanimelist.net/anime/producer/2/Kyoto_Animation
+myanimelist.net##div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-10.score-label
+myanimelist.net##div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-9.score-label
+myanimelist.net##div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-8.score-label
+myanimelist.net##div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-7.score-label
+myanimelist.net##div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-6.score-label
+myanimelist.net##div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-5.score-label
+myanimelist.net##div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-4.score-label
+myanimelist.net##div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-3.score-label
+myanimelist.net##div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-2.score-label
+myanimelist.net##div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-1.score-label
+
+! latest anime reviews ex https://myanimelist.net/
+myanimelist.net##.fl-r.di-ib.lightLink.fs10
+
+! last anime updates ex https://myanimelist.net/profile/ledoxmedox
+myanimelist.net##.score-10.score-label.completed.anime.text
+myanimelist.net##.score-9.score-label.completed.anime.text
+myanimelist.net##.score-8.score-label.completed.anime.text
+myanimelist.net##.score-7.score-label.completed.anime.text
+myanimelist.net##.score-6.score-label.completed.anime.text
+myanimelist.net##.score-5.score-label.completed.anime.text
+myanimelist.net##.score-4.score-label.completed.anime.text
+myanimelist.net##.score-3.score-label.completed.anime.text
+myanimelist.net##.score-2.score-label.completed.anime.text
+myanimelist.net##.score-1.score-label.completed.anime.text
+myanimelist.net##.score-10.score-label.watching.anime.text
+myanimelist.net##.score-9.score-label.watching.anime.text
+myanimelist.net##.score-8.score-label.watching.anime.text
+myanimelist.net##.score-7.score-label.watching.anime.text
+myanimelist.net##.score-6.score-label.watching.anime.text
+myanimelist.net##.score-5.score-label.watching.anime.text
+myanimelist.net##.score-4.score-label.watching.anime.text
+myanimelist.net##.score-3.score-label.watching.anime.text
+myanimelist.net##.score-2.score-label.watching.anime.text
+myanimelist.net##.score-1.score-label.watching.anime.text
+myanimelist.net##.score-10.score-label.dropped.anime.text
+myanimelist.net##.score-9.score-label.dropped.anime.text
+myanimelist.net##.score-8.score-label.dropped.anime.text
+myanimelist.net##.score-7.score-label.dropped.anime.text
+myanimelist.net##.score-6.score-label.dropped.anime.text
+myanimelist.net##.score-5.score-label.dropped.anime.text
+myanimelist.net##.score-4.score-label.dropped.anime.text
+myanimelist.net##.score-3.score-label.dropped.anime.text
+myanimelist.net##.score-2.score-label.dropped.anime.text
+myanimelist.net##.score-1.score-label.dropped.anime.text
+myanimelist.net##.score-10.score-label.on_hold.anime.text
+myanimelist.net##.score-9.score-label.on_hold.anime.text
+myanimelist.net##.score-8.score-label.on_hold.anime.text
+myanimelist.net##.score-7.score-label.on_hold.anime.text
+myanimelist.net##.score-6.score-label.on_hold.anime.text
+myanimelist.net##.score-5.score-label.on_hold.anime.text
+myanimelist.net##.score-4.score-label.on_hold.anime.text
+myanimelist.net##.score-3.score-label.on_hold.anime.text
+myanimelist.net##.score-2.score-label.on_hold.anime.text
+myanimelist.net##.score-1.score-label.on_hold.anime.text
+
+! anime staff positions ex https://myanimelist.net/people/31707/Perfume
+myanimelist.net##tr.js-anime-watch-status-people-staff-notinmylist.js-people-staff > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-watch-status-people-staff-inmylist.js-people-staff > td.borderClass > div.spaceit_pad > span
+myanimelist.net##.js-anime-watch-status-people-staff-plantowatch.js-people-staff > td.borderClass > div.spaceit_pad > span
+
+! any view style ex https://myanimelist.net/anime/producer/2/Kyoto_Animation or https://myanimelist.net/anime/season/2021/summer
+myanimelist.net##div.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > .widget > .stars
+myanimelist.net##div.js-anime-type-2.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > .widget > .stars
+myanimelist.net##div.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > .widget > .stars
+myanimelist.net##div.js-anime-type-4.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > .widget > .stars
+myanimelist.net##div.js-anime-type-5.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > .widget > .stars
+myanimelist.net##div.js-anime-type-6.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > .widget > .stars
+myanimelist.net##div.js-anime-type-7.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > .widget > .stars
+myanimelist.net##div.js-anime-type-8.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > .widget > .stars
+myanimelist.net##div.js-anime-type-9.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > .widget > .stars
+myanimelist.net##div.js-anime-type-10.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > .widget > .stars
+myanimelist.net##tr.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-2.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-4.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-5.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-6.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-7.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-8.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-9.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-10.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span
+myanimelist.net##.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > .widget > .stars
+myanimelist.net##.js-anime-type-2.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > .widget > .stars
+myanimelist.net##.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > .widget > .stars
+myanimelist.net##.js-anime-type-4.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > .widget > .stars
+myanimelist.net##.js-anime-type-5.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > .widget > .stars
+myanimelist.net##.js-anime-type-6.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > .widget > .stars
+myanimelist.net##.js-anime-type-7.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > .widget > .stars
+myanimelist.net##.js-anime-type-8.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > .widget > .stars
+myanimelist.net##.js-anime-type-9.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > .widget > .stars
+myanimelist.net##.js-anime-type-10.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > .widget > .stars
+myanimelist.net##.score-10.score-label.score.scormem-item
+myanimelist.net##.score-9.score-label.score.scormem-item
+myanimelist.net##.score-8.score-label.score.scormem-item
+myanimelist.net##.score-7.score-label.score.scormem-item
+myanimelist.net##.score-6.score-label.score.scormem-item
+myanimelist.net##.score-5.score-label.score.scormem-item
+myanimelist.net##.score-4.score-label.score.scormem-item
+myanimelist.net##.score-3.score-label.score.scormem-item
+myanimelist.net##.score-2.score-label.score.scormem-item
+myanimelist.net##.score-1.score-label.score.scormem-item
+
+! statistics score (bottom left) both anime & manga ex https://myanimelist.net/anime/33352/Violet_Evergarden or https://myanimelist.net/manga/98930/Violet_Evergarden
+myanimelist.net##.di-i.js-statistics-info.po-r.spaceit_pad .score-1.score-label
+myanimelist.net##.di-i.js-statistics-info.po-r.spaceit_pad .score-2.score-label
+myanimelist.net##.di-i.js-statistics-info.po-r.spaceit_pad .score-3.score-label
+myanimelist.net##.di-i.js-statistics-info.po-r.spaceit_pad .score-4.score-label
+myanimelist.net##.di-i.js-statistics-info.po-r.spaceit_pad .score-5.score-label
+myanimelist.net##.di-i.js-statistics-info.po-r.spaceit_pad .score-6.score-label
+myanimelist.net##.di-i.js-statistics-info.po-r.spaceit_pad .score-7.score-label
+myanimelist.net##.di-i.js-statistics-info.po-r.spaceit_pad .score-8.score-label
+myanimelist.net##.di-i.js-statistics-info.po-r.spaceit_pad .score-9.score-label
+myanimelist.net##.di-i.js-statistics-info.po-r.spaceit_pad .score-10.score-label
+
+! ex https://myanimelist.net/reviews.php?t=manga
+! ex https://myanimelist.net/reviews.php?t=anime
+! ex https://myanimelist.net/anime/12031/Kingdom/reviews
+! ex https://myanimelist.net/manga/2/Berserk/reviews
+myanimelist.net##div.borderDark:nth-of-type(1) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(2) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(3) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(4) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(5) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(6) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(7) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(8) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(9) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(10) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(11) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(12) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(13) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(14) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(15) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(16) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(17) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(18) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(19) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(20) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(21) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(22) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(23) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(24) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(25) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(26) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(27) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(28) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(29) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(30) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(31) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(32) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(33) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(34) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(35) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(36) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(37) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(38) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(39) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(40) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(41) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(42) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(43) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(44) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(45) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(46) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(47) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(48) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(49) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+myanimelist.net##div.borderDark:nth-of-type(50) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)
+
+! random ⭐ studio thing idk prob only for movie (not TV)
+myanimelist.net##.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span
+myanimelist.net##tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer:nth-of-type(8) > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span
+myanimelist.net##tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer:nth-of-type(11) > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span
+myanimelist.net##.js-anime-type-4.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span
+myanimelist.net##.js-anime-type-5.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span
+
+! last manga updates ex https://myanimelist.net/profile/ledoxmedox
+myanimelist.net##.score-1.score-label.completed.manga.text
+myanimelist.net##.score-2.score-label.completed.manga.text
+myanimelist.net##.score-3.score-label.completed.manga.text
+myanimelist.net##.score-4.score-label.completed.manga.text
+myanimelist.net##.score-5.score-label.completed.manga.text
+myanimelist.net##.score-6.score-label.completed.manga.text
+myanimelist.net##.score-7.score-label.completed.manga.text
+myanimelist.net##.score-8.score-label.completed.manga.text
+myanimelist.net##.score-9.score-label.completed.manga.text
+myanimelist.net##.score-10.score-label.completed.manga.text
+
+myanimelist.net##.score-10.score-label.reading.manga.text
+myanimelist.net##.score-9.score-label.reading.manga.text
+myanimelist.net##.score-8.score-label.reading.manga.text
+myanimelist.net##.score-7.score-label.reading.manga.text
+myanimelist.net##.score-6.score-label.reading.manga.text
+myanimelist.net##.score-5.score-label.reading.manga.text
+myanimelist.net##.score-4.score-label.reading.manga.text
+myanimelist.net##.score-3.score-label.reading.manga.text
+myanimelist.net##.score-2.score-label.reading.manga.text
+myanimelist.net##.score-1.score-label.reading.manga.text
+
+myanimelist.net##.score-1.score-label.hold.manga.text
+myanimelist.net##.score-2.score-label.hold.manga.text
+myanimelist.net##.score-3.score-label.hold.manga.text
+myanimelist.net##.score-4.score-label.hold.manga.text
+myanimelist.net##.score-5.score-label.hold.manga.text
+myanimelist.net##.score-6.score-label.hold.manga.text
+myanimelist.net##.score-7.score-label.hold.manga.text
+myanimelist.net##.score-8.score-label.hold.manga.text
+myanimelist.net##.score-9.score-label.hold.manga.text
+myanimelist.net##.score-10.score-label.hold.manga.text
+
+myanimelist.net##.score-1.score-label.on_hold.manga.text
+myanimelist.net##.score-2.score-label.on_hold.manga.text
+myanimelist.net##.score-3.score-label.on_hold.manga.text
+myanimelist.net##.score-4.score-label.on_hold.manga.text
+myanimelist.net##.score-5.score-label.on_hold.manga.text
+myanimelist.net##.score-6.score-label.on_hold.manga.text
+myanimelist.net##.score-7.score-label.on_hold.manga.text
+myanimelist.net##.score-8.score-label.on_hold.manga.text
+myanimelist.net##.score-9.score-label.on_hold.manga.text
+myanimelist.net##.score-10.score-label.on_hold.manga.text
+
+myanimelist.net##.score-1.score-label.dropped.manga.text
+myanimelist.net##.score-2.score-label.dropped.manga.text
+myanimelist.net##.score-3.score-label.dropped.manga.text
+myanimelist.net##.score-4.score-label.dropped.manga.text
+myanimelist.net##.score-5.score-label.dropped.manga.text
+myanimelist.net##.score-6.score-label.dropped.manga.text
+myanimelist.net##.score-7.score-label.dropped.manga.text
+myanimelist.net##.score-8.score-label.dropped.manga.text
+myanimelist.net##.score-9.score-label.dropped.manga.text
+myanimelist.net##.score-10.score-label.dropped.manga.text
+
+! ex https://myanimelist.net/topanime.php
+! ex https://myanimelist.net/topmanga.php
+myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-10.score-label.on.text
+myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-9.score-label.on.text
+myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-8.score-label.on.text
+myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-7.score-label.on.text
+myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-6.score-label.on.text
+myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-5.score-label.on.text
+myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-4.score-label.on.text
+myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-3.score-label.on.text
+myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-2.score-label.on.text
+myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-1.score-label.on.text
+
+! ex https://myanimelist.net/stacks/4019?view_style=tile
+myanimelist.net##.stars
+
+! 2022-08-02 https://myanimelist.net ¯\_(ツ)_/¯
+myanimelist.net##tr.js-anime-watch-status-people-manga-notinmylist.js-people-manga > td.borderClass > div.spaceit_pad > span
+
+! 2022-08-09 https://myanimelist.net ¯\_(ツ)_/¯
+myanimelist.net##.js-btn-not-recommended.not-recommended.tag
+myanimelist.net##.js-btn-recommended.recommended.tag
+
+! 2022-08-16 https://myanimelist.net ¯\_(ツ)_/¯
+myanimelist.net##.js-anime-type-6.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span
+
+! 2022-08-25 https://myanimelist.net ¯\_(ツ)_/¯
+myanimelist.net##.show.mal-modal
+myanimelist.net##.show.mal-modal-backdrop
+
+! 2022-09-04 https://myanimelist.net ¯\_(ツ)_/¯
+myanimelist.net##.js-btn-mixed-feelings.mixed-feelings.tag
+
+! 2022-09-15 https://myanimelist.net ¯\_(ツ)_/¯
+myanimelist.net##.js-btn-label.btn-label.recommended.tag
+myanimelist.net##.js-btn-label.btn-label.not-recommended.tag
+myanimelist.net##.js-btn-label.btn-label.mixed-feelings.tag
+
+! 2022-08-28 https://myanimelist.net ¯\_(ツ)_/¯
+myanimelist.net##.show.mal-modal
+myanimelist.net##.show.mal-modal-backdrop
+
+! 2023-02-14 https://myanimelist.net ¯\_(ツ)_/¯
+myanimelist.net##.fn-grey4.lh14.fs10.pt8
+myanimelist.net##.pt4.fs10.lh14.fn-grey4
+myanimelist.net##.extra-info
+
+myanimelist.net##span.work-status-num:nth-of-type(2)
+myanimelist.net##.notes > .edit
+myanimelist.net##.on.mr4.icon-people-score-star
+myanimelist.net##.pt8.info
+
+! https://myanimelist.net/stacks/21390?view_style=seasonal
+myanimelist.net##.score.scormem-item
