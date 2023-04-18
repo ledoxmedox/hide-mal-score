@@ -7,7 +7,7 @@
 // @grant        GM_addStyle
 // @run-at       document-start
 // @icon         https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://myanimelist.net&size=64
-// @updateURL    https://github.com/ledoxmedox/hidemalrating/raw/master/tampermonkey/download.user.js
+// @updateURL    https://github.com/ledoxmedox/hide-mal-score/raw/master/tampermonkey/download.user.js
 // ==/UserScript==
 
 const selectors = [
