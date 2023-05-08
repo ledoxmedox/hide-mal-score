@@ -11,6 +11,7 @@
 // @grant        GM_getValue
 // @icon         https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://myanimelist.net&size=64
 // @updateURL    https://github.com/ledoxmedox/hide-mal-score/raw/master/tampermonkey/download.user.js
+// @downloadURL  https://github.com/ledoxmedox/hide-mal-score/raw/master/tampermonkey/download.user.js
 // ==/UserScript==
 
 (function() {
