@@ -1,16 +1,22 @@
 // ==UserScript==
 // @name         Hide MyAnimeList Score
-// @version      0.1
+// @version      0.2
 // @description  Hide the score on MyAnimeList
 // @author       ledoxmedox
 // @match        https://myanimelist.net/*
-// @grant        GM_addStyle
 // @run-at       document-start
+// @grant        GM_addStyle
+// @grant        GM_registerMenuCommand
+// @grant        GM_setValue
+// @grant        GM_getValue
 // @icon         https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://myanimelist.net&size=64
 // @updateURL    https://github.com/ledoxmedox/hide-mal-score/raw/master/tampermonkey/download.user.js
 // ==/UserScript==
 
-const selectors = [
+(function() {
+    'use strict';
+
+    const selectors = [
 
     // https://myanimelist.net/anime/7791/K-On
     '.score.fl-l > .score-label',
@@ -210,9 +216,7 @@ const selectors = [
     '.score-1.score-label.score.scormem-item',
 
     // Anime and Manga Statistics Score (Bottom Left)
-    // https://myanimelist.net/anime/33352/Violet_Evergarden 
-    // or
-    // https://myanimelist.net/manga/98930/Violet_Evergarden
+    // https://myanimelist.net/anime/33352/Violet_Evergarden or https://myanimelist.net/manga/98930/Violet_Evergarden
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-1.score-label',
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-2.score-label',
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-3.score-label',
@@ -224,7 +228,7 @@ const selectors = [
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-9.score-label',
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-10.score-label',
 
-    // this might not used anymore
+    // Unused anymore maybe?
     // https://myanimelist.net/reviews.php?t=manga
     // https://myanimelist.net/reviews.php?t=anime
     // https://myanimelist.net/anime/12031/Kingdom/reviews
@@ -280,7 +284,7 @@ const selectors = [
     'div.borderDark:nth-of-type(49) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)',
     'div.borderDark:nth-of-type(50) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)',
 
-    // random ⭐ studio thing idk prob only for movie (not TV)
+    // Random ⭐ symbol logo studio thing only for movie (not TV)
     '.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span',
     'tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer:nth-of-type(8) > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span',
     'tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer:nth-of-type(11) > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span',
@@ -325,10 +329,32 @@ const selectors = [
     '.pt8.info',
     '.score.scormem-item',
 
-];
+    ];
 
-// Construct the final selector
-const selector = selectors.map(s => s.replace('myanimelist.net##', '')).join(',');
+    // Construct the final selector
+    const selector = selectors.map(s => s.replace('myanimelist.net##', '')).join(',');
 
-// Apply the new selector
-GM_addStyle(selector + '{ display: none !important; }');
+    var elementsHidden = GM_getValue('elementsHidden', false);
+
+    // Apply the initial style based on the state of elementsHidden
+    GM_addStyle(selector + '{ display: ' + (elementsHidden ? 'none' : 'initial') + ' !important; }');
+
+    // Toggle the hiding of elements on
+    function toggleElementsOn() {
+        elementsHidden = true;
+        GM_setValue('elementsHidden', elementsHidden);
+        GM_addStyle(selector + '{ display: none !important; }');
+    }
+
+    // Toggle the hiding of elements off
+    function toggleElementsOff() {
+        elementsHidden = false;
+        GM_setValue('elementsHidden', elementsHidden);
+        GM_addStyle(selector + '{ display: initial !important; }');
+    }
+
+    // Add menu commands to toggle the hiding of elements on and off
+    GM_registerMenuCommand('ON', toggleElementsOn);
+    GM_registerMenuCommand('OFF', toggleElementsOff);
+
+})();
