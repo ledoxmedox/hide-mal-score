@@ -288,6 +288,18 @@ myanimelist.net##.al.di-ib.js-top-ranking-score-col > .score-1.score-label.on.te
 !! https://myanimelist.net/stacks/4019?view_style=tile
 myanimelist.net##.stars
 
+!! https://myanimelist.net/anime/producer/376/Sentai_Filmworks if licensor
+myanimelist.net##tr.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-2.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-4.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-5.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-6.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-7.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-8.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-9.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span
+myanimelist.net##tr.js-anime-type-10.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span
+
 !! ¯\_(ツ)_/¯
 myanimelist.net##tr.js-anime-watch-status-people-manga-notinmylist.js-people-manga > td.borderClass > div.spaceit_pad > span
 myanimelist.net##.js-btn-not-recommended.not-recommended.tag
