@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Hide MyAnimeList Score
-// @version      0.3
+// @version      0.4
 // @description  Hide the score on MyAnimeList
 // @author       ledoxmedox
 // @match        https://myanimelist.net/*
