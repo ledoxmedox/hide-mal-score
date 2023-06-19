@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Hide MyAnimeList Score
-// @version      0.2
+// @version      0.3
 // @description  Hide the score on MyAnimeList
 // @author       ledoxmedox
 // @match        https://myanimelist.net/*
@@ -307,7 +307,22 @@
 
     // https://myanimelist.net/stacks/4019?view_style=tile
     '.stars',
+        
+    // https://myanimelist.net/anime/producer/376/Sentai_Filmworks (Licensor)
+    'tr.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-2.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-4.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-5.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-6.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-7.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-8.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-9.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-10.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
 
+    // https://myanimelist.net/stacks/21390?view_style=seasonal
+    '.score.scormem-item',
+        
     // ¯\_(ツ)_/¯
     'tr.js-anime-watch-status-people-manga-notinmylist.js-people-manga > td.borderClass > div.spaceit_pad > span',
     '.js-btn-not-recommended.not-recommended.tag',
@@ -328,7 +343,6 @@
     '.notes > .edit',
     '.on.mr4.icon-people-score-star',
     '.pt8.info',
-    '.score.scormem-item',
 
     ];
 
