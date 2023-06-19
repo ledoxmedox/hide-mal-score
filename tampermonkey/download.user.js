@@ -320,6 +320,18 @@
     'tr.js-anime-type-9.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
     'tr.js-anime-type-10.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
 
+    // https://myanimelist.net/anime/producer/143/Mainichi_Broadcasting_System (Producer)
+    'tr.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-2.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-4.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-5.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-6.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-7.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-8.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-9.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
+    'tr.js-anime-type-10.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
+
     // https://myanimelist.net/stacks/21390?view_style=seasonal
     '.score.scormem-item',
         
