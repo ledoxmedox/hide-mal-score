@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Hide MyAnimeList Score
-// @version      0.4
+// @version      0.5
 // @description  Hide the score on MyAnimeList
 // @author       ledoxmedox
 // @match        https://myanimelist.net/*
@@ -18,14 +18,12 @@
     'use strict';
 
     const selectors = [
-
     // https://myanimelist.net/anime/7791/K-On
     '.score.fl-l > .score-label',
 
     // https://myanimelist.net/anime/genre/4/Comedy
-    'td.bgColor0.ac.borderClass:nth-of-type(5)',
-    'td.bgColor1.ac.borderClass:nth-of-type(5)',
-    'td.fw-b.ac.bgColor1.borderClass:nth-of-type(5)',
+    'tr:nth-of-type(n+2):nth-of-type(-n+101) > td.bgColor0.ac.borderClass:nth-of-type(5)',
+    'tr:nth-of-type(n+2):nth-of-type(-n+101) > td.bgColor1.ac.borderClass:nth-of-type(5)',
 
     // https://myanimelist.net/anime/producer/2/Kyoto_Animation
     'tr.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span',
@@ -39,7 +37,7 @@
     'tr.js-anime-type-9.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span',
     'tr.js-anime-type-10.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-studio > td.borderClass > div.spaceit_pad > span',
 
-    // idk is this thing still used or not
+    // Unused?
     // https://myanimelist.net/anime/producer/2/Kyoto_Animation
     'div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-10.score-label',
     'div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-9.score-label',
@@ -52,14 +50,10 @@
     'div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-2.score-label',
     'div.di-ib.js-statistics-info.po-r.spaceit_pad > .score-1.score-label',
 
-    // Latest Anime Review
-    // Overall Rating: -
-    // https://myanimelist.net/
+    // https://myanimelist.net/#:~:text=Latest%20Anime%20Reviews
     '.fl-r.di-ib.lightLink.fs10',
 
-    // Last Anime Updates
-    // Scored -
-    // https://myanimelist.net/profile/ledoxmedox
+    // https://myanimelist.net/profile/ledoxmedox#:~:text=Last%20Anime%20Updates
     '.score-10.score-label.completed.anime.text',
     '.score-9.score-label.completed.anime.text',
     '.score-8.score-label.completed.anime.text',
@@ -104,9 +98,7 @@
     '.score-2.score-label.on_hold.anime.text',
     '.score-1.score-label.on_hold.anime.text',
 
-    // Last Manga Updates
-    // Scored -
-    // https://myanimelist.net/profile/ledoxmedox
+    // https://myanimelist.net/profile/ledoxmedox#:~:text=Last%20Manga%20Updates
     '.score-1.score-label.completed.manga.text',
     '.score-2.score-label.completed.manga.text',
     '.score-3.score-label.completed.manga.text',
@@ -162,13 +154,15 @@
     '.score-9.score-label.dropped.manga.text',
     '.score-10.score-label.dropped.manga.text',
 
-    // Anime Staff Positions
-    // https://myanimelist.net/people/31707/Perfume
+    // https://myanimelist.net/people/31707/Perfume#:~:text=Anime%20Staff%20Positions
+    'tr.js-anime-watch-status-people-manga-notinmylist.js-people-manga > td.borderClass > div.spaceit_pad > .mr4.icon-people-score-star',
+    'tr.js-anime-watch-status-people-staff-notinmylist.js-people-staff > td.borderClass > div.spaceit_pad > .mr4.icon-people-score-star',
+    'tr.js-anime-watch-status-people-staff-inmylist.js-people-staff > td.borderClass > div.spaceit_pad > .mr4.icon-people-score-star',
     'tr.js-anime-watch-status-people-staff-notinmylist.js-people-staff > td.borderClass > div.spaceit_pad > span',
     'tr.js-anime-watch-status-people-staff-inmylist.js-people-staff > td.borderClass > div.spaceit_pad > span',
     '.js-anime-watch-status-people-staff-plantowatch.js-people-staff > td.borderClass > div.spaceit_pad > span',
 
-    // Any View Style
+    // Any view style
     // https://myanimelist.net/anime/producer/2/Kyoto_Animation
     // or
     // https://myanimelist.net/anime/season/2021/summer
@@ -216,8 +210,7 @@
     '.score-2.score-label.score.scormem-item',
     '.score-1.score-label.score.scormem-item',
 
-    // Anime and Manga Statistics Score (Bottom Left)
-    // https://myanimelist.net/anime/33352/Violet_Evergarden or https://myanimelist.net/manga/98930/Violet_Evergarden
+    // https://myanimelist.net/anime/44511/Chainsaw_Man#:~:text=Statistics,users)
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-1.score-label',
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-2.score-label',
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-3.score-label',
@@ -229,11 +222,12 @@
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-9.score-label',
     '.di-i.js-statistics-info.po-r.spaceit_pad .score-10.score-label',
 
-    // Unused anymore maybe?
+    // Unused?
     // https://myanimelist.net/reviews.php?t=manga
     // https://myanimelist.net/reviews.php?t=anime
     // https://myanimelist.net/anime/12031/Kingdom/reviews
     // https://myanimelist.net/manga/2/Berserk/reviews
+    '.js-hidden.mb20.mt20.rating',
     'div.borderDark:nth-of-type(1) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)',
     'div.borderDark:nth-of-type(2) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)',
     'div.borderDark:nth-of-type(3) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)',
@@ -285,15 +279,16 @@
     'div.borderDark:nth-of-type(49) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)',
     'div.borderDark:nth-of-type(50) > div.spaceit:nth-of-type(1) > .mb8 > div:nth-of-type(3)',
 
-    // Random ⭐ symbol logo studio thing only for movie (not TV)
+    // Random ⭐ symbol logo studio thing movie only (not TV)
     '.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span',
     'tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer:nth-of-type(8) > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span',
     'tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer:nth-of-type(11) > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span',
     '.js-anime-type-4.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span',
     '.js-anime-type-5.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass:nth-of-type(3) > div.spaceit_pad:nth-of-type(1) > span',
 
-    // https://myanimelist.net/topanime.php
-    // https://myanimelist.net/topmanga.php
+    // https://myanimelist.net/topanime.php#:~:text=Score
+    // https://myanimelist.net/topmanga.php#:~:text=Score
+    '.al.di-ib.js-top-ranking-score-col > .on.mr4.fa-star.fa-solid.icon-score-star',
     '.al.di-ib.js-top-ranking-score-col > .score-10.score-label.on.text',
     '.al.di-ib.js-top-ranking-score-col > .score-9.score-label.on.text',
     '.al.di-ib.js-top-ranking-score-col > .score-8.score-label.on.text',
@@ -308,7 +303,7 @@
     // https://myanimelist.net/stacks/4019?view_style=tile
     '.stars',
         
-    // https://myanimelist.net/anime/producer/376/Sentai_Filmworks (Licensor)
+    // https://myanimelist.net/anime/producer/376/Sentai_Filmworks#:~:text=Licensor
     'tr.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
     'tr.js-anime-type-2.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
     'tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
@@ -320,7 +315,7 @@
     'tr.js-anime-type-9.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
     'tr.js-anime-type-10.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-licensor > td.borderClass > div.spaceit_pad > span',
 
-    // https://myanimelist.net/anime/producer/143/Mainichi_Broadcasting_System (Producer)
+    // https://myanimelist.net/anime/producer/143/Mainichi_Broadcasting_System#:~:text=Producer
     'tr.js-anime-type-1.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
     'tr.js-anime-type-2.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
     'tr.js-anime-type-3.js-anime-type-all.js-seasonal-anime.seasonal-anime.js-anime-category-producer > td.borderClass > div.spaceit_pad > span',
@@ -363,25 +358,34 @@
 
     var elementsHidden = GM_getValue('elementsHidden', false);
 
-    // Apply the initial style based on the state of elementsHidden
-    GM_addStyle(selector + '{ display: ' + (elementsHidden ? 'none' : 'initial') + ' !important; }');
+    // Apply the initial style based on the state of elementsHidden opacity: 0
+    GM_addStyle(selector + '{ opacity: ' + (elementsHidden ? '0' : '1') + ' !important; }');
 
     // Toggle the hiding of elements on
     function toggleElementsOn() {
         elementsHidden = true;
         GM_setValue('elementsHidden', elementsHidden);
-        GM_addStyle(selector + '{ display: none !important; }');
+        GM_addStyle(selector + '{ opacity: 0 !important; }');
     }
 
     // Toggle the hiding of elements off
     function toggleElementsOff() {
         elementsHidden = false;
         GM_setValue('elementsHidden', elementsHidden);
-        GM_addStyle(selector + '{ display: initial !important; }');
+        GM_addStyle(selector + '{ opacity: 1 !important; }');
+    }
+
+    //
+    function toggleElementsOnOff() {
+        if (elementsHidden) {
+            toggleElementsOff();
+        } else {
+            toggleElementsOn();
+        }
     }
 
     // Add menu commands to toggle the hiding of elements on and off
-    GM_registerMenuCommand('ON', toggleElementsOn);
-    GM_registerMenuCommand('OFF', toggleElementsOff);
-
+    // GM_registerMenuCommand('ON', toggleElementsOn);
+    // GM_registerMenuCommand('OFF', toggleElementsOff);
+    GM_registerMenuCommand('Toggle', toggleElementsOnOff);
 })();
